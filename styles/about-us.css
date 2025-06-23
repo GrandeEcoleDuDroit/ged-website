@@ -1,0 +1,35 @@
+@import url("global.css");
+@import url("header.css");
+@import url("footer.css");
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 20px;
+}
+
+#team-image {
+    width: 250px;
+}
+
+#dev-memoji-image {
+    width: 100px;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+.team-figure {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-figure div {
+    display: flex;
+    flex-direction: column;
+}
