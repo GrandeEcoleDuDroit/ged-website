@@ -3,10 +3,10 @@ footer {
     background-color: #333;
     color: white;
     padding-block: 30px;
+    padding-inline: 20px;
     position: relative;
     bottom: 0;
-    width: 100%;
-    margin-top: auto;
+
 }
 
 footer a {

@@ -2,33 +2,45 @@
 @import url("header.css");
 @import url("footer.css");
 
+header {
+    display: flex;
+    padding-inline: 12px;
+    align-items: center;
+}
+
+header a {
+    border-radius: 50px;
+}
+
+.links-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .page-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #e4e4e4;
-    text-decoration: none;
     color: #333;
-    max-width: fit-content;
+    background-color: #e4e4e4;
+    flex-grow: 1;
 }
 
 .page-link:hover {
     background-color: #cacaca;
 }
 
-
-.page-link-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    color: #333;
-    max-width: fit-content;
-}
-
 .material-symbols-outlined  {
     font-size: 32px !important;
+}
+
+@media (max-width: 480) {
+    header {
+        flex-direction: column;
+        align-items: end;
+    }
 }

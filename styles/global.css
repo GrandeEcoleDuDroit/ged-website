@@ -14,18 +14,35 @@ h1 {
 header {
     display: flex;
     gap: 8px;
-    padding-inline: 12px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-inline: 20px;
+    padding-inline: 40px;
     min-height: 100vh;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 a {
     text-decoration: none;
+    color: #712B28;
+    font-weight: 600;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
 }
