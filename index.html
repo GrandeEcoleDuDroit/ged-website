@@ -19,54 +19,48 @@
   <main>
     <section class="title-section">
       <h2>Bienvenue !</h2>
-      <p>
+      <p id="subtitle">
         Ce site relaye toutes les informations concernant les applications de
         la Grande Ecole du Droit.
       </p>
     </section>
 
-    <div class="app-section">
-      <div id="android-section">
-        <div class="android-app-title">
-          <img src="assets/logo/android-logo.svg" alt="Logo Android" class="app-logo"/>
-          <p>Application Android (v1.0 bêta)</p>
+    <section class="app-section">
+      <p class="info-text">
+       <span class="material-symbols-outlined">info</span>
+       Les applications sont actuellement en version bêta. Il est nécessaire de s'inscrire dans les groupes de test pour pouvoir les télécharger.
+      </p>
+
+      <div>
+        <div id="android">
+          <div class="android-app-title">
+            <img src="assets/logo/android-logo.svg" alt="Logo Android" class="app-logo"/>
+            <p>Application Android (v1.0 bêta)</p>
+          </div>
+
+          <ul>
+            <li>Rejoindre le groupe : <a href="https://groups.google.com/g/gedclosedtesting">https://groups.google.com/g/gedclosedtesting</a></li>
+            <li>Télécharger l'application
+              <ul>
+                <li>Depuis le navigateur : <a href="https://play.google.com/apps/testing/com.upsaclay.gedoise">https://play.google.com/apps/testing/com.upsaclay.gedoise</a></li>
+                <li>Depuis le PlayStore : <a href="https://play.google.com/store/apps/details?id=com.upsaclay.gedoise">https://play.google.com/store/apps/details?id=com.upsaclay.gedoise</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
-        <ul>
-          <li>Lien envoyé par e-mail</li>
-        </ul>
-      </div>
+        <div id="ios">
+          <div class="ios-app-title">
+            <img src="assets/logo/apple-logo.svg" alt="Logo Apple" class="app-logo"/>
+            <p>Application iOS (v1.0 bêta)</p>
+          </div>
 
-      <div id="ios-section">
-        <div class="ios-app-title">
-          <img src="assets/logo/apple-logo.svg" alt="Logo Apple" class="app-logo"/>
-          <p>Application iOS (v1.0 bêta)</p>
+          <ul>
+            <li>Lien d'invitation : <a href="https://testflight.apple.com/join/PEHFaRN1">https://testflight.apple.com/join/PEHFaRN1</a></li>
+          </ul>
         </div>
-
-        <ul>
-          <li>Lien envoyé par e-mail</li>
-        </ul>
       </div>
-
-      <div class="form-section">
-        <p class="info-text">Ces services étant actuellement en version bêta, nous vous invitons à renseigner votre adresse e-mail. Un lien d'accès vous sera transmis après validation.</p>
-
-        <form action="https://formspree.io/f/mjkelrrn" method="POST">
-          <input type="hidden" name="subject" value="Email to add as beta tester" />
-
-          <label for="platform-select" class="info-text">Plateforme :</label>
-          <select name="plateform" id="platform-select">
-            <option value="android">Android</option>
-            <option value="ios">iOS</option>
-          </select>
-
-          <label for="email-input" class="info-text">Adresse e-mail :</label>
-          <input id="email-input" type="email" name="email" required/>
-
-          <button class="send-button" type="submit">Envoyer</button>
-        </form>
-      </div>
-    </div>
+    </section>
 
     <section class="navigation-links-section">
       <div id="links-container">
