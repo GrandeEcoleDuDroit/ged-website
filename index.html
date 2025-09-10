@@ -11,7 +11,7 @@
 <body>
   <header>
     <a href="./index.html">
-      <img src="./assets/images/logo.png" alt="GED Logo" class="logo" />
+      <img src="assets/logo/logo.png" alt="GED Logo" class="logo" />
     </a>
     <h1>Grande Ecole Du Droit</h1>
   </header>
@@ -25,23 +25,39 @@
       </p>
     </section>
 
-    <div class="app-link">
-      <div class="app-link-name">
-        <img src="./assets/images/android-logo.svg" alt="Logo Android" class="app-logo"/>
-        <p>Application Android</p>
+    <div class="app-section">
+
+      <div id="android-section">
+        <div class="android-app-title">
+          <img src="assets/logo/android-logo.svg" alt="Logo Android" class="app-logo"/>
+          <p>Application Android (v1.0 alpha)</p>
+        </div>
+
+        <ul>
+          <li>Télécharger depuis le web : <a href="https://play.google.com/apps/testing/com.upsaclay.gedoise">https://play.google.com/apps/testing/com.upsaclay.gedoise</a></li>
+          <li>Télécharger depuis le PlayStore : <a href="https://play.google.com/store/apps/details?id=com.upsaclay.gedoise">https://play.google.com/store/apps/details?id=com.upsaclay.gedoise</a></li>
+        </ul>
       </div>
 
-      <ul>
-        <li>Télécharger depuis le web : <a href="https://play.google.com/apps/testing/com.upsaclay.gedoise">https://play.google.com/apps/testing/com.upsaclay.gedoise</a></li>
-        <li>Télécharger depuis le PlayStore : <a href="https://play.google.com/store/apps/details?id=com.upsaclay.gedoise">https://play.google.com/store/apps/details?id=com.upsaclay.gedoise</a></li>
-      </ul>
+      <div id="ios-section">
+        <div class="ios-app-title">
+          <img src="assets/logo/apple-logo.svg" alt="Logo Apple" class="app-logo"/>
+          <p>Application iOS (v1.0 alpha)</p>
+        </div>
 
-      <p class="info-text">L'application est actuellement en version bêta. Veuillez saisir votre adresse e-mail Google afin d'obtenir un accès : </p>
-      <form action="https://formspree.io/f/mjkelrrn" method="POST">
-        <input type="hidden" name="subject" value="Email to add as beta tester" />
-        <label class="info-text">Adresse e-mail : <input class="email-input" type="email" name="email"></label>
-        <button class="send-button" type="submit">Envoyer</button>
-      </form>
+        <ul>
+          <li>Lien envoyé par e-mail</li>
+        </ul>
+      </div>
+
+      <div class="beta-section">
+        <p class="info-text">L'application est actuellement en version alpha. Veuillez saisir votre adresse e-mail Google afin d'obtenir un accès : </p>
+        <form action="https://formspree.io/f/mjkelrrn" method="POST">
+          <input type="hidden" name="subject" value="Email to add as beta tester" />
+          <label class="info-text">Adresse e-mail : <input class="email-input" type="email" name="email"></label>
+          <button class="send-button" type="submit">Envoyer</button>
+        </form>
+      </div>
     </div>
 
     <section class="links-section">

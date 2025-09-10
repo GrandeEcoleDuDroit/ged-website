@@ -46,19 +46,30 @@ ul {
     font-size: 32px !important;
 }
 
-.app-link {
+.app-section {
     display: flex;
     flex-direction: column;
 }
 
-.app-link-name {
+.android-app-title {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     gap: 10px;
 }
 
-.app-link-name p {
+.android-app-title p {
+    margin: 0!important;
+}
+
+.ios-app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.ios-app-title p {
     margin: 0!important;
 }
 
