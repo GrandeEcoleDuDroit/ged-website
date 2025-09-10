@@ -20,7 +20,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-inline: 40px;
+    padding-inline: 10vw;
     min-height: 100vh;
     padding-bottom: 50px;
 }

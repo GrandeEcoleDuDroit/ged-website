@@ -10,7 +10,6 @@ header {
 
 header a {
     border-radius: 50px;
-    padding-inline: 12px;
 }
 
 ul {
@@ -19,7 +18,90 @@ ul {
     gap: 10px;
 }
 
-.links-section {
+p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.app-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.android-app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.ios-app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-logo {
+    width: 22px;
+}
+
+.info-text {
+    font-size: 0.9rem;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-section form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.75rem 1rem;
+    align-items: center;
+}
+
+.form-section label {
+    text-align: left;
+}
+
+.form-section input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.form-section select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: min-content;
+}
+
+.send-button {
+    background-color: #284871;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-column: 1;
+}
+
+.navigation-links-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#links-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -30,7 +112,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     color: #333;
     background-color: #e4e4e4;
@@ -44,48 +126,6 @@ ul {
 
 .material-symbols-outlined  {
     font-size: 32px !important;
-}
-
-.app-link {
-    display: flex;
-    flex-direction: column;
-}
-
-.app-link-name {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 10px;
-}
-
-.app-link-name p {
-    margin: 0!important;
-}
-
-.app-logo {
-    width: 22px;
-}
-
-.info-text {
-    font-size: 0.9rem;
-}
-
-.email-input {
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 250px;
-    max-width: 100%;
-    margin-right: 10px;
-}
-
-.send-button {
-    background-color: #284871;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 @media (max-width: 480px) {
