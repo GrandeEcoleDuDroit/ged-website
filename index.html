@@ -26,23 +26,10 @@
     </section>
 
     <div class="app-section">
-
       <div id="android-section">
         <div class="android-app-title">
           <img src="assets/logo/android-logo.svg" alt="Logo Android" class="app-logo"/>
-          <p>Application Android (v1.0 alpha)</p>
-        </div>
-
-        <ul>
-          <li>Télécharger depuis le web : <a href="https://play.google.com/apps/testing/com.upsaclay.gedoise">https://play.google.com/apps/testing/com.upsaclay.gedoise</a></li>
-          <li>Télécharger depuis le PlayStore : <a href="https://play.google.com/store/apps/details?id=com.upsaclay.gedoise">https://play.google.com/store/apps/details?id=com.upsaclay.gedoise</a></li>
-        </ul>
-      </div>
-
-      <div id="ios-section">
-        <div class="ios-app-title">
-          <img src="assets/logo/apple-logo.svg" alt="Logo Apple" class="app-logo"/>
-          <p>Application iOS (v1.0 alpha)</p>
+          <p>Application Android (v1.0 bêta)</p>
         </div>
 
         <ul>
@@ -50,26 +37,49 @@
         </ul>
       </div>
 
-      <div class="beta-section">
-        <p class="info-text">L'application est actuellement en version alpha. Veuillez saisir votre adresse e-mail Google afin d'obtenir un accès : </p>
+      <div id="ios-section">
+        <div class="ios-app-title">
+          <img src="assets/logo/apple-logo.svg" alt="Logo Apple" class="app-logo"/>
+          <p>Application iOS (v1.0 bêta)</p>
+        </div>
+
+        <ul>
+          <li>Lien envoyé par e-mail</li>
+        </ul>
+      </div>
+
+      <div class="form-section">
+        <p class="info-text">Ces services étant actuellement en version bêta, nous vous invitons à renseigner votre adresse e-mail. Un lien d'accès vous sera transmis après validation.</p>
+
         <form action="https://formspree.io/f/mjkelrrn" method="POST">
           <input type="hidden" name="subject" value="Email to add as beta tester" />
-          <label class="info-text">Adresse e-mail : <input class="email-input" type="email" name="email"></label>
+
+          <label for="platform-select" class="info-text">Plateforme :</label>
+          <select name="plateform" id="platform-select">
+            <option value="android">Android</option>
+            <option value="ios">iOS</option>
+          </select>
+
+          <label for="email-input" class="info-text">Adresse e-mail :</label>
+          <input id="email-input" type="email" name="email" required/>
+
           <button class="send-button" type="submit">Envoyer</button>
         </form>
       </div>
     </div>
 
-    <section class="links-section">
-      <a href="./privacy-policy.html" class="page-link">
-        <span class="material-symbols-outlined">docs</span>
-        <p>Politique de Confidentialité</p>
-      </a>
+    <section class="navigation-links-section">
+      <div id="links-container">
+        <a href="./privacy-policy.html" class="page-link">
+          <span class="material-symbols-outlined">docs</span>
+          <p>Politique de Confidentialité</p>
+        </a>
 
-      <a href="./about-us.html" class="page-link">
-        <span class="material-symbols-outlined"> groups</span>
-        <p>À propos de nous</p>
-      </a>
+        <a href="./about-us.html" class="page-link">
+          <span class="material-symbols-outlined"> groups</span>
+          <p>À propos de nous</p>
+        </a>
+      </div>
     </section>
   </main>
 
