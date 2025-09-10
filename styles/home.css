@@ -18,6 +18,10 @@ ul {
     gap: 10px;
 }
 
+li > ul {
+    margin-top: 5px;
+}
+
 p {
     margin: 0;
 }
@@ -28,9 +32,11 @@ main {
     gap: 1.5rem;
 }
 
+
 .app-section {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .android-app-title {
@@ -53,6 +59,15 @@ main {
 
 .info-text {
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 4px;
+    color: #646464;
+}
+
+.info-text span {
+    font-size: 18px!important;
 }
 
 .form-section {
