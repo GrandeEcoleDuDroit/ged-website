@@ -4,12 +4,19 @@
 
 header {
     display: flex;
-    padding-inline: 12px;
+    padding-inline: 1rem;
     align-items: center;
 }
 
 header a {
     border-radius: 50px;
+    padding-inline: 12px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .links-section {
@@ -28,6 +35,7 @@ header a {
     color: #333;
     background-color: #e4e4e4;
     flex-grow: 1;
+    text-decoration: none!important;
 }
 
 .page-link:hover {
@@ -38,7 +46,49 @@ header a {
     font-size: 32px !important;
 }
 
-@media (max-width: 480) {
+.app-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-link-name {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.app-link-name p {
+    margin: 0!important;
+}
+
+.app-logo {
+    width: 22px;
+}
+
+.info-text {
+    font-size: 0.9rem;
+}
+
+.email-input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.send-button {
+    background-color: #284871;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
     header {
         flex-direction: column;
         align-items: end;
