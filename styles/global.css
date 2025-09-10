@@ -26,9 +26,9 @@ main {
 }
 
 a {
-    text-decoration: none;
-    color: #712B28;
-    font-weight: 600;
+    color: #284871;
+    text-decoration: underline!important;
+    font-weight: normal!important;
 }
 
 /* Mobile */
