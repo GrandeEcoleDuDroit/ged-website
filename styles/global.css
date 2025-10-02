@@ -36,3 +36,10 @@ li {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
+
+hr {
+    border: 0;
+    margin: 0;
+    height: 1px;
+    background: #b4b4b4;
+}
