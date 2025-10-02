@@ -2,89 +2,85 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Ged Application</title>
-  <link href="./styles/home.css" rel="stylesheet" />
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Ged Application</title>
+    <link href="./styles/home.css" rel="stylesheet"/>
 </head>
 
 <body>
-  <header>
+<header>
     <nav class="navbar">
-      <div class="nav-container">
-        <a href="./index.html">
-          <img alt="Logo GED" class="nav-logo-img" src="assets/logo/logo.png">
-        </a>
+        <div class="nav-container">
+            <a href="./index.html">
+                <img alt="Logo GED" class="nav-logo-img" src="assets/logo/logo.png">
+            </a>
 
-        <button aria-label="Menu" class="nav-toggle">
-          <span class="material-symbols-outlined">dehaze</span>
-        </button>
+            <button aria-label="Menu" class="nav-toggle">
+                <span class="material-symbols-outlined">dehaze</span>
+            </button>
 
-        <ul class="nav-links">
-          <li><a href="legal-notice.html">Mentions légales</a></li>
-          <li><a href="./about-us.html">À propos de nous</a></li>
-        </ul>
-      </div>
+            <ul class="nav-links">
+                <li><a href="legal-notice.html">Mentions légales</a></li>
+                <li><a href="./about-us.html">À propos de nous</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
     <div class="title-section">
-      <h2>Bienvenue !</h2>
-      <p id="subtitle">
-        Ce site relaye toutes les informations concernant les applications de
-        la Grande Ecole du Droit.
-      </p>
+        <h2>Bienvenue !</h2>
+        <p id="subtitle">
+            Ce site relaye toutes les informations concernant les applications de
+            la Grande Ecole du Droit.
+        </p>
     </div>
 
     <section class="app-section">
-      <p class="info-text">
-       <span class="material-symbols-outlined">info</span>
-       Les applications sont actuellement en version bêta. Il est nécessaire de s'inscrire dans les groupes de test afin de pouvoir les télécharger.
-      </p>
+        <p class="info-text">
+            <span class="material-symbols-outlined">info</span>
+            Les applications sont actuellement en version bêta. Il est nécessaire de s'inscrire dans les groupes de test
+            afin de pouvoir les télécharger.
+        </p>
 
-      <div>
-        <div id="android">
-          <div class="android-app-title">
-            <img alt="Logo Android" class="app-logo" src="assets/logo/android-logo.svg"/>
-            <p>Application Android (v1.0 bêta)</p>
-          </div>
+        <div>
+            <div id="android">
+                <div class="android-app-title">
+                    <img alt="Logo Android" class="app-logo" src="assets/logo/android-logo.svg"/>
+                    <p>Application Android (v1.0 bêta)</p>
+                </div>
 
-          <ul>
-            <li>Rejoindre le groupe : <a href="https://groups.google.com/g/gedclosedtesting">https://groups.google.com/g/gedclosedtesting</a></li>
-            <li>Télécharger l'application : <a href="https://play.google.com/store/apps/details?id=com.upsaclay.gedoise">https://play.google.com/store/apps/details?id=com.upsaclay.gedoise</a></li>
-          </ul>
+                <ul>
+                    <li>Rejoindre le groupe : <a href="https://groups.google.com/g/gedclosedtesting">https://groups.google.com/g/gedclosedtesting</a>
+                    </li>
+                    <li>Télécharger l'application : <a
+                            href="https://play.google.com/store/apps/details?id=com.upsaclay.gedoise">https://play.google.com/store/apps/details?id=com.upsaclay.gedoise</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="ios">
+                <div class="ios-app-title">
+                    <img alt="Logo Apple" class="app-logo" src="assets/logo/apple-logo.svg"/>
+                    <p>Application iOS (v1.0 bêta)</p>
+                </div>
+
+                <ul>
+                    <li>Lien d'invitation : <a href="https://testflight.apple.com/join/PEHFaRN1">https://testflight.apple.com/join/PEHFaRN1</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div id="ios">
-          <div class="ios-app-title">
-            <img alt="Logo Apple" class="app-logo" src="assets/logo/apple-logo.svg"/>
-            <p>Application iOS (v1.0 bêta)</p>
-          </div>
-
-          <ul>
-            <li>Lien d'invitation : <a href="https://testflight.apple.com/join/PEHFaRN1">https://testflight.apple.com/join/PEHFaRN1</a></li>
-          </ul>
-        </div>
-      </div>
     </section>
-  </main>
+</main>
 
-  <footer>
+<footer>
     <p>2025 La Grande Ecole Du Droit. Tous droits réservés.</p>
-    <p>
-      Nous contacter : <a href="mailto:application.ged@gmail.com">application.ged@gmail.com</a>
-    </p>
-  </footer>
+    <p>Nous contacter : <a href="mailto:application.ged@gmail.com">application.ged@gmail.com</a></p>
+</footer>
 
-  <script>
-    const toggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
+<script src="scripts/main.js"></script>
 </body>
 
 </html>

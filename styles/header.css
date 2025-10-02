@@ -64,7 +64,8 @@ header img {
     }
 
     .nav-links.active {
-        display: flex; 
+        display: flex;
+        padding-bottom: 10px;
     }
 }
 
