@@ -1,5 +1,9 @@
-import {toggleNavbar} from "./toggleNavbar";
 
 document.addEventListener("DOMContentLoaded", function () {
-    toggleNavbar();
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
 })
