@@ -4,8 +4,7 @@
 
 .team-section {
     display: flex;
-    flex-wrap: wrap;
-    align-items: end;
+    flex-direction: column;
     gap: 20px;
 }
 
