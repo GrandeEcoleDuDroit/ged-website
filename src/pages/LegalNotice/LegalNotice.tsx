@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import "./LegalNotice.css"
+import CollapsibleDiv from "../../components/CollapsibleDiv.tsx";
 
 const LegalNotice = () => {
     return (
@@ -8,352 +8,330 @@ const LegalNotice = () => {
                 <title>Mentions légales</title>
             </Helmet>
             <main>
-                <div id="terms-of-use">
-                    <div className="collapsible">
-                        <h2>Conditions d'utilisation</h2>
-                        <span className="material-symbols-outlined">keyboard_arrow_up</span>
-                    </div>
+                <CollapsibleDiv title={"Conditions d'utilisation"}>
+                    <p>Dernière mise à jour : 2 Octobre 2025</p>
+                    <p>
+                        Les présentes Conditions d’Utilisation ont pour but d’encadrer l’accès et l’usage de
+                        l’application La
+                        Grande Ecole du Droit par les utilisateurs.
+                        L'application permet de publier des annonces ou missions, d’interagir via une messagerie, et de
+                        créer un
+                        profil personnel.
+                    </p>
 
-                    <div className="content">
-                        <p>Dernière mise à jour : 2 Octobre 2025</p>
-                        <p>
-                            Les présentes Conditions d’Utilisation ont pour but d’encadrer l’accès et l’usage de
-                            l’application La
-                            Grande Ecole du Droit par les utilisateurs.
-                            L'application permet de publier des annonces ou missions, d’interagir via une messagerie, et de
-                            créer un
-                            profil personnel.
-                        </p>
+                    <h3>1. Création de compte</h3>
+                    <ul>
+                        <li>La création d’un compte est nécessaire pour accéder à certaines fonctionnalités.</li>
+                        <li>Les informations fournies doivent être exactes, complètes et à jour.</li>
+                        <li>L’utilisateur est responsable de la confidentialité de ses identifiants.</li>
+                    </ul>
 
-                        <h3>1. Création de compte</h3>
-                        <ul>
-                            <li>La création d’un compte est nécessaire pour accéder à certaines fonctionnalités.</li>
-                            <li>Les informations fournies doivent être exactes, complètes et à jour.</li>
-                            <li>L’utilisateur est responsable de la confidentialité de ses identifiants.</li>
-                        </ul>
+                    <h3>2. Utilisation autorisée</h3>
+                    <p>Vous êtes autorisé à utiliser l’application pour :</p>
+                    <ul>
+                        <li>Publier des annonces ou missions dans le respect des lois en vigueur,</li>
+                        <li>Utiliser la messagerie pour échanger avec d'autres utilisateurs,</li>
+                        <li>Créer et personnaliser votre profil,</li>
+                        <li>Utiliser la plateforme de manière respectueuse et légale.</li>
+                    </ul>
 
-                        <h3>2. Utilisation autorisée</h3>
-                        <p>Vous êtes autorisé à utiliser l’application pour :</p>
-                        <ul>
-                            <li>Publier des annonces ou missions dans le respect des lois en vigueur,</li>
-                            <li>Utiliser la messagerie pour échanger avec d'autres utilisateurs,</li>
-                            <li>Créer et personnaliser votre profil,</li>
-                            <li>Utiliser la plateforme de manière respectueuse et légale.</li>
-                        </ul>
+                    <h3>3. Comportements interdits</h3>
+                    <p>Il est strictement interdit de :</p>
+                    <ul>
+                        <li>Publier du contenu illégal, violent, offensant ou inapproprié,</li>
+                        <li>Harceler ou menacer d'autres utilisateurs,</li>
+                        <li>Usurper l'identité d’une personne ou entité,</li>
+                        <li>Diffuser du spam, du contenu publicitaire non autorisé ou du phishing,</li>
+                        <li>Compromettre la sécurité de l’application ou tenter de la pirater,</li>
+                        <li>Utiliser l'application à des fins frauduleuses ou illégales.</li>
+                    </ul>
 
-                        <h3>3. Comportements interdits</h3>
-                        <p>Il est strictement interdit de :</p>
-                        <ul>
-                            <li>Publier du contenu illégal, violent, offensant ou inapproprié,</li>
-                            <li>Harceler ou menacer d'autres utilisateurs,</li>
-                            <li>Usurper l'identité d’une personne ou entité,</li>
-                            <li>Diffuser du spam, du contenu publicitaire non autorisé ou du phishing,</li>
-                            <li>Compromettre la sécurité de l’application ou tenter de la pirater,</li>
-                            <li>Utiliser l'application à des fins frauduleuses ou illégales.</li>
-                        </ul>
+                    <h3>4. Modération et suppression</h3>
+                    <p>
+                        Nous nous réservons le droit de suspendre ou supprimer un compte utilisateur ne respectant pas
+                        les présentes conditions, sans préavis.
+                    </p>
+                    <p>Les contenus pouvant enfreindre la loi ou nos règles peuvent être supprimés à tout moment.</p>
 
-                        <h3>4. Modération et suppression</h3>
-                        <p>Nous nous réservons le droit de suspendre ou supprimer un compte utilisateur ne respectant pas
-                            les
-                            présentes conditions, sans préavis.</p>
-                        <p>Les contenus pouvant enfreindre la loi ou nos règles peuvent être supprimés à tout moment.</p>
+                    <h3>5. Données personnelles</h3>
+                    <p>
+                        Les données personnelles sont traitées conformément à notre Politique de Confidentialité (voir ci
+                        dessous). Nous nous engageons à protéger votre vie privée.
+                    </p>
 
-                        <h3>5. Données personnelles</h3>
-                        <p>Les données personnelles sont traitées conformément à notre Politique de Confidentialité (voir ci
-                            dessous). Nous nous engageons à protéger votre vie privée.</p>
+                    <h3>6. Responsabilité</h3>
+                    <ul>
+                        <li>L’utilisateur est seul responsable du contenu qu’il publie.</li>
+                        <li>
+                            Nous ne pouvons être tenu responsable des interactions ou accords entre utilisateurs, y
+                            compris en dehors de la plateforme.
+                        </li>
+                    </ul>
 
-                        <h3>6. Responsabilité</h3>
-                        <ul>
-                            <li>L’utilisateur est seul responsable du contenu qu’il publie.</li>
-                            <li>Nous ne pouvons être tenu responsable des interactions ou accords entre utilisateurs, y
-                                compris en
-                                dehors de la plateforme.
-                            </li>
-                        </ul>
-
-                        <h3>7. Modifications des conditions</h3>
-                        <p>Les présentes conditions peuvent être mises à jour à tout moment. Les utilisateurs seront
-                            informés en cas
-                            de changements majeurs.</p>
-                    </div>
-                </div>
+                    <h3>7. Modifications des conditions</h3>
+                    <p>
+                        Les présentes conditions peuvent être mises à jour à tout moment. Les utilisateurs seront
+                        informés en cas de changements majeurs.
+                    </p>
+                </CollapsibleDiv>
 
                 <hr/>
 
-                <div id="privacy-policy">
-                    <div className="collapsible">
-                        <h2>Politique de Confidentialité</h2>
-                        <span className="material-symbols-outlined">keyboard_arrow_up</span>
-                    </div>
+                <CollapsibleDiv title={"Politique de Confidentialité"}>
+                    <p>Date d'entrée en vigueur : 23 juin 2025</p>
+                    <p>
+                        Nous nous engageons à protéger votre vie privée. Cette politique de
+                        confidentialité explique comment nous collectons, utilisons,
+                        divulguons et protégeons vos informations lorsque vous utilisez notre
+                        application mobile et nos services associés.
+                    </p>
 
-                    <div className="content">
-                        <p>Date d'entrée en vigueur : 23 juin 2025</p>
-                        <p>
-                            Nous nous engageons à protéger votre vie privée. Cette politique de
-                            confidentialité explique comment nous collectons, utilisons,
-                            divulguons et protégeons vos informations lorsque vous utilisez notre
-                            application mobile et nos services associés.
-                        </p>
+                    <h3>1. Informations que nous collectons</h3>
+                    <p>
+                        Nous pouvons collecter des informations vous concernant de diverses
+                        manières. Les informations que nous pouvons collecter via
+                        l'application dépendent du contenu et des matériaux que vous utilisez,
+                        et comprennent :
+                    </p>
 
-                        <h3>1. Informations que nous collectons</h3>
-                        <p>
-                            Nous pouvons collecter des informations vous concernant de diverses
-                            manières. Les informations que nous pouvons collecter via
-                            l'application dépendent du contenu et des matériaux que vous utilisez,
-                            et comprennent :
-                        </p>
+                    <h4>1.1 Informations personnelles que vous nous fournissez :</h4>
+                    <ul>
+                        <li>
+                            <strong>Données de compte :</strong> Lorsque vous créez un compte,
+                            nous pouvons collecter votre nom, prénom, adresse e-mail, mot de
+                            passe haché, niveau de scolarité.
+                        </li>
+                        <li>
+                            <strong>Informations de profil :</strong> Toute information que vous
+                            choisissez d'ajouter à votre profil public, telle que votre photo de
+                            profil.
+                        </li>
+                        <li>
+                            <strong>Contenu généré par l'utilisateur :</strong> Tout texte,
+                            photos, messages et autres contenus que vous
+                            publiez, ou partagez via l'application.
+                        </li>
+                        <li>
+                            <strong>Communications :</strong> Les messages que vous envoyez à d'autres utilisateurs.
+                        </li>
+                    </ul>
 
-                        <h4>1.1 Informations personnelles que vous nous fournissez :</h4>
-                        <ul>
-                            <li>
-                                <strong>Données de compte :</strong> Lorsque vous créez un compte,
-                                nous pouvons collecter votre nom, prénom, adresse e-mail, mot de
-                                passe haché, niveau de scolarité.
-                            </li>
-                            <li>
-                                <strong>Informations de profil :</strong> Toute information que vous
-                                choisissez d'ajouter à votre profil public, telle que votre photo de
-                                profil.
-                            </li>
-                            <li>
-                                <strong>Contenu généré par l'utilisateur :</strong> Tout texte,
-                                photos, messages et autres contenus que vous
-                                publiez, ou partagez via l'application.
-                            </li>
-                            <li>
-                                <strong>Communications :</strong> Les messages que vous envoyez à
-                                d'autres utilisateurs.
-                            </li>
-                        </ul>
+                    <h4>1.2 Informations que nous collectons automatiquement :</h4>
+                    <ul>
+                        <li>
+                            <strong>Données d'utilisation :</strong> Informations sur la façon
+                            dont vous accédez et utilisez le Service, telles que votre activité
+                            dans l'application (par exemple les fonctionnalités que vous
+                            utilisez), les heures d'accès et la durée de vos sessions.
+                        </li>
+                        <li>
+                            <strong>Données techniques de l'appareil :</strong> Informations sur
+                            votre appareil mobile, dont le modèle de votre appareil, le système
+                            d'exploitation et sa version.
+                        </li>
+                    </ul>
 
-                        <h4>1.2 Informations que nous collectons automatiquement :</h4>
-                        <ul>
-                            <li>
-                                <strong>Données d'utilisation :</strong> Informations sur la façon
-                                dont vous accédez et utilisez le Service, telles que votre activité
-                                dans l'application (par exemple les fonctionnalités que vous
-                                utilisez), les heures d'accès et la durée de vos sessions.
-                            </li>
-                            <li>
-                                <strong>Données techniques de l'appareil :</strong> Informations sur
-                                votre appareil mobile, dont le modèle de votre appareil, le système
-                                d'exploitation et sa version.
-                            </li>
-                        </ul>
+                    <h3>2. Comment nous utilisons vos informations</h3>
+                    <p>
+                        Nous utilisons les informations collectées de diverses manières,
+                        notamment pour :
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Fournir et maintenir notre Service :</strong> Pour vous
+                            permettre d'accéder à l'application, de créer et de gérer votre
+                            compte, et d'utiliser toutes ses fonctionnalités.
+                        </li>
+                        <li>
+                            <strong>Améliorer notre Service :</strong> Pour comprendre comment
+                            vous et d'autres utilisateurs interagissent avec l'application, afin
+                            d'optimiser l'interface utilisateur, d'ajouter de nouvelles
+                            fonctionnalités et d'améliorer les performances.
+                        </li>
+                        <li>
+                            <strong>Développer de nouvelles fonctionnalités :</strong> Pour
+                            rechercher et développer de nouvelles fonctionnalités, produits et
+                            services.
+                        </li>
+                        <li>
+                            <strong>Communiquer avec vous :</strong> Pour vous envoyer des
+                            notifications importantes concernant le Service (mises à jour,
+                            informations de sécurité), des messages administratifs, des alertes
+                            de compte.
+                        </li>
+                        <li>
+                            <strong>Modérer le contenu et assurer la sécurité :</strong> Pour
+                            détecter, prévenir et répondre aux abus, aux spams, aux activités
+                            illégales et aux violations de nos conditions d'utilisation.
+                        </li>
+                    </ul>
 
-                        <h3>2. Comment nous utilisons vos informations</h3>
-                        <p>
-                            Nous utilisons les informations collectées de diverses manières,
-                            notamment pour :
-                        </p>
-                        <ul>
-                            <li>
-                                <strong>Fournir et maintenir notre Service :</strong> Pour vous
-                                permettre d'accéder à l'application, de créer et de gérer votre
-                                compte, et d'utiliser toutes ses fonctionnalités.
-                            </li>
-                            <li>
-                                <strong>Améliorer notre Service :</strong> Pour comprendre comment
-                                vous et d'autres utilisateurs interagissent avec l'application, afin
-                                d'optimiser l'interface utilisateur, d'ajouter de nouvelles
-                                fonctionnalités et d'améliorer les performances.
-                            </li>
-                            <li>
-                                <strong>Développer de nouvelles fonctionnalités :</strong> Pour
-                                rechercher et développer de nouvelles fonctionnalités, produits et
-                                services.
-                            </li>
-                            <li>
-                                <strong>Communiquer avec vous :</strong> Pour vous envoyer des
-                                notifications importantes concernant le Service (mises à jour,
-                                informations de sécurité), des messages administratifs, des alertes
-                                de compte.
-                            </li>
-                            <li>
-                                <strong>Modérer le contenu et assurer la sécurité :</strong> Pour
-                                détecter, prévenir et répondre aux abus, aux spams, aux activités
-                                illégales et aux violations de nos conditions d'utilisation.
-                            </li>
-                        </ul>
+                    <h3>3. Comment vos informations sont partagées</h3>
+                    <p>
+                        Nous pouvons partager les informations que nous avons collectées à
+                        votre sujet dans certaines situations. Vos informations peuvent être
+                        divulguées comme suit :
+                    </p>
 
-                        <h3>3. Comment vos informations sont partagées</h3>
-                        <p>
-                            Nous pouvons partager les informations que nous avons collectées à
-                            votre sujet dans certaines situations. Vos informations peuvent être
-                            divulguées comme suit :
-                        </p>
+                    <h4>3.1 Par vous :</h4>
+                    <ul>
+                        <li>
+                            <strong>Contenu public :</strong> Le contenu que vous publiez
+                            publiquement (messages, photos) sera visible par d'autres
+                            utilisateurs du Service.
+                        </li>
+                        <li>
+                            <strong>Interactions avec d'autres utilisateurs :</strong> Les
+                            informations que vous partagez directement avec d'autres
+                            utilisateurs (via des messages privés, par exemple) sont partagées
+                            avec ces utilisateurs.
+                        </li>
+                    </ul>
 
-                        <h4>3.1 Par vous :</h4>
-                        <ul>
-                            <li>
-                                <strong>Contenu public :</strong> Le contenu que vous publiez
-                                publiquement (messages, photos) sera visible par d'autres
-                                utilisateurs du Service.
-                            </li>
-                            <li>
-                                <strong>Interactions avec d'autres utilisateurs :</strong> Les
-                                informations que vous partagez directement avec d'autres
-                                utilisateurs (via des messages privés, par exemple) sont partagées
-                                avec ces utilisateurs.
-                            </li>
-                        </ul>
+                    <h4>3.2 Par nous :</h4>
+                    <ul>
+                        <li>
+                            <strong>Avec nos fournisseurs de services tiers :</strong> Nous
+                            pouvons partager vos informations avec des fournisseurs de services
+                            tiers qui effectuent des services en notre nom, tels que
+                            l'hébergement de données, l'analyse. Ces tiers ont accès à vos
+                            informations uniquement pour exécuter ces tâches en notre nom et
+                            sont contractuellement tenus de maintenir la confidentialité de ces
+                            informations.
+                        </li>
+                        <li>
+                            <strong>Pour des raisons légales :</strong> Nous pouvons divulguer
+                            vos informations si la loi l'exige ou si nous pensons de bonne foi
+                            qu'une telle action est nécessaire pour (1) se conformer à une
+                            obligation légale, (2) protéger et défendre les droits ou la
+                            propriété de La Grande Ecole du Droit, (3) prévenir ou enquêter sur
+                            d'éventuels actes répréhensibles liés au Service, (4) protéger la
+                            sécurité personnelle des utilisateurs du Service ou du public, ou
+                            (5) se protéger contre la responsabilité légale.
+                        </li>
+                    </ul>
 
-                        <h4>3.2 Par nous :</h4>
-                        <ul>
-                            <li>
-                                <strong>Avec nos fournisseurs de services tiers :</strong> Nous
-                                pouvons partager vos informations avec des fournisseurs de services
-                                tiers qui effectuent des services en notre nom, tels que
-                                l'hébergement de données, l'analyse. Ces tiers ont accès à vos
-                                informations uniquement pour exécuter ces tâches en notre nom et
-                                sont contractuellement tenus de maintenir la confidentialité de ces
-                                informations.
-                            </li>
-                            <li>
-                                <strong>Pour des raisons légales :</strong> Nous pouvons divulguer
-                                vos informations si la loi l'exige ou si nous pensons de bonne foi
-                                qu'une telle action est nécessaire pour (1) se conformer à une
-                                obligation légale, (2) protéger et défendre les droits ou la
-                                propriété de La Grande Ecole du Droit, (3) prévenir ou enquêter sur
-                                d'éventuels actes répréhensibles liés au Service, (4) protéger la
-                                sécurité personnelle des utilisateurs du Service ou du public, ou
-                                (5) se protéger contre la responsabilité légale.
-                            </li>
-                        </ul>
+                    <h3>4. Vos choix et vos droits en matière de confidentialité</h3>
+                    <p>Vous disposez de certains droits concernant les informations que nous détenons à votre sujet :</p>
+                    <ul>
+                        <li>
+                            <strong>Accès à vos informations :</strong> Vous pouvez demander une
+                            copie des informations personnelles que nous détenons à votre sujet.
+                        </li>
+                        <li>
+                            <strong>Correction de vos informations :</strong> Vous pouvez mettre
+                            à jour ou corriger les informations de votre compte directement dans
+                            l'application. Si vous rencontrez des difficultés, contactez-nous.
+                        </li>
+                        <li>
+                            <strong>Suppression de vos informations ("droit à l'oubli") :</strong>
+                            Vous pouvez demander la suppression de vos informations
+                            personnelles. Veuillez noter que la suppression peut entraîner la
+                            fermeture de votre compte et la perte de l'accès à certaines
+                            fonctionnalités. Certaines informations peuvent être conservées pour
+                            des raisons légales ou administratives.
+                        </li>
+                        <li>
+                            <strong>Opposition au traitement :</strong> Vous avez le droit de
+                            vous opposer au traitement de vos informations personnelles pour
+                            certains motifs.
+                        </li>
+                        <li>
+                            <strong>Restriction du traitement :</strong> Vous avez le droit de
+                            demander la restriction du traitement de vos informations
+                            personnelles dans certaines circonstances.
+                        </li>
+                        <li>
+                            <strong>Portabilité des données :</strong> Vous avez le droit de
+                            recevoir les informations personnelles que vous nous avez fournies
+                            dans un format structuré, couramment utilisé et lisible par machine,
+                            et de les transmettre à un autre responsable du traitement.
+                        </li>
+                        <li>
+                            <strong>Retrait du consentement :</strong> Si nous traitons vos
+                            informations sur la base de votre consentement, vous avez le droit
+                            de retirer ce consentement à tout moment. Cela n'affectera pas la
+                            légalité du traitement basé sur le consentement avant son retrait.
+                        </li>
+                    </ul>
+                    <p>
+                        Pour exercer l'un de ces droits, veuillez nous contacter à <a href="mailto:application.ged@gmail.com">application.ged@gmail.com</a>. Nous répondrons à votre demande conformément aux lois applicables.
+                    </p>
 
-                        <h3>4. Vos choix et vos droits en matière de confidentialité</h3>
-                        <p>
-                            Vous disposez de certains droits concernant les informations que nous
-                            détenons à votre sujet :
-                        </p>
-                        <ul>
-                            <li>
-                                <strong>Accès à vos informations :</strong> Vous pouvez demander une
-                                copie des informations personnelles que nous détenons à votre sujet.
-                            </li>
-                            <li>
-                                <strong>Correction de vos informations :</strong> Vous pouvez mettre
-                                à jour ou corriger les informations de votre compte directement dans
-                                l'application. Si vous rencontrez des difficultés, contactez-nous.
-                            </li>
-                            <li>
-                                <strong
-                                >Suppression de vos informations ("droit à l'oubli") :</strong
-                                >
-                                Vous pouvez demander la suppression de vos informations
-                                personnelles. Veuillez noter que la suppression peut entraîner la
-                                fermeture de votre compte et la perte de l'accès à certaines
-                                fonctionnalités. Certaines informations peuvent être conservées pour
-                                des raisons légales ou administratives.
-                            </li>
-                            <li>
-                                <strong>Opposition au traitement :</strong> Vous avez le droit de
-                                vous opposer au traitement de vos informations personnelles pour
-                                certains motifs.
-                            </li>
-                            <li>
-                                <strong>Restriction du traitement :</strong> Vous avez le droit de
-                                demander la restriction du traitement de vos informations
-                                personnelles dans certaines circonstances.
-                            </li>
-                            <li>
-                                <strong>Portabilité des données :</strong> Vous avez le droit de
-                                recevoir les informations personnelles que vous nous avez fournies
-                                dans un format structuré, couramment utilisé et lisible par machine,
-                                et de les transmettre à un autre responsable du traitement.
-                            </li>
-                            <li>
-                                <strong>Retrait du consentement :</strong> Si nous traitons vos
-                                informations sur la base de votre consentement, vous avez le droit
-                                de retirer ce consentement à tout moment. Cela n'affectera pas la
-                                légalité du traitement basé sur le consentement avant son retrait.
-                            </li>
-                        </ul>
-                        <p>
-                            Pour exercer l'un de ces droits, veuillez nous contacter à
-                            <a href="mailto:application.ged@gmail.com"
-                            >application.ged@gmail.com</a
-                            >
-                            Nous répondrons à votre demande conformément aux lois applicables.
-                        </p>
+                    <h4>4.1 Paramètres de l'appareil</h4>
+                    <p>
+                        La plupart des plateformes mobiles (iOS, Android) offrent des options
+                        pour contrôler la façon dont votre appareil collecte et partage
+                        certaines informations, telles que les services de localisation, les
+                        notifications push et les accès aux photos ou au microphone. Nous vous
+                        encourageons à explorer les paramètres de confidentialité de votre
+                        appareil.
+                    </p>
 
-                        <h4>4.1 Paramètres de l'appareil</h4>
-                        <p>
-                            La plupart des plateformes mobiles (iOS, Android) offrent des options
-                            pour contrôler la façon dont votre appareil collecte et partage
-                            certaines informations, telles que les services de localisation, les
-                            notifications push et les accès aux photos ou au microphone. Nous vous
-                            encourageons à explorer les paramètres de confidentialité de votre
-                            appareil.
-                        </p>
+                    <h3>5. Sécurité de vos informations</h3>
+                    <p>
+                        Nous mettons en œuvre des mesures de sécurité administratives,
+                        techniques et physiques raisonnables pour protéger vos informations
+                        personnelles contre l'accès non autorisé, la divulgation, l'altération
+                        et la destruction. Cependant, aucune méthode de transmission sur
+                        Internet ou de stockage électronique n'est 100 % sécurisée. Par
+                        conséquent, nous ne pouvons garantir une sécurité absolue.
+                    </p>
 
-                        <h3>5. Sécurité de vos informations</h3>
-                        <p>
-                            Nous mettons en œuvre des mesures de sécurité administratives,
-                            techniques et physiques raisonnables pour protéger vos informations
-                            personnelles contre l'accès non autorisé, la divulgation, l'altération
-                            et la destruction. Cependant, aucune méthode de transmission sur
-                            Internet ou de stockage électronique n'est 100 % sécurisée. Par
-                            conséquent, nous ne pouvons garantir une sécurité absolue.
-                        </p>
+                    <h3>6. Conservation des données</h3>
+                    <p>
+                        Nous conserverons vos informations personnelles aussi longtemps que
+                        votre compte est actif ou tant que cela est nécessaire pour vous
+                        fournir les services. Nous conserverons et utiliserons vos
+                        informations dans la mesure nécessaire pour nous conformer à nos
+                        obligations légales, résoudre les litiges et faire respecter nos
+                        accords.
+                    </p>
 
-                        <h3>6. Conservation des données</h3>
-                        <p>
-                            Nous conserverons vos informations personnelles aussi longtemps que
-                            votre compte est actif ou tant que cela est nécessaire pour vous
-                            fournir les services. Nous conserverons et utiliserons vos
-                            informations dans la mesure nécessaire pour nous conformer à nos
-                            obligations légales, résoudre les litiges et faire respecter nos
-                            accords.
-                        </p>
+                    <h3>7. Confidentialité des enfants</h3>
+                    <p>
+                        Notre service n'est pas destiné aux enfants de moins de 15 ans. Nous
+                        ne collectons pas sciemment d'informations personnelles identifiables
+                        auprès d'enfants de moins de 15 ans. Si vous avez moins de 15 ans,
+                        veuillez ne pas utiliser notre application ni fournir d'informations
+                        vous concernant. Si nous apprenons que nous avons collecté ou reçu des
+                        informations personnelles d'un enfant de moins de 15 ans sans
+                        vérification du consentement parental, nous supprimerons ces
+                        informations. Si vous pensez que nous pourrions avoir des informations
+                        d'un enfant de moins de 15 ans, veuillez nous en faire part.
+                    </p>
 
-                        <h3>7. Confidentialité des enfants</h3>
-                        <p>
-                            Notre service n'est pas destiné aux enfants de moins de 15 ans. Nous
-                            ne collectons pas sciemment d'informations personnelles identifiables
-                            auprès d'enfants de moins de 15 ans. Si vous avez moins de 15 ans,
-                            veuillez ne pas utiliser notre application ni fournir d'informations
-                            vous concernant. Si nous apprenons que nous avons collecté ou reçu des
-                            informations personnelles d'un enfant de moins de 15 ans sans
-                            vérification du consentement parental, nous supprimerons ces
-                            informations. Si vous pensez que nous pourrions avoir des informations
-                            d'un enfant de moins de 15 ans, veuillez nous en faire part.
-                        </p>
+                    <h3>8. Liens vers d'autres services</h3>
+                    <p>
+                        Notre service peut contenir des liens vers des applications de tiers
+                        qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers,
+                        vous serez redirigé vers l'application de ce tiers. Nous vous
+                        conseillons fortement de consulter la politique de confidentialité de
+                        chaque site ou application que vous visitez. Nous n'avons aucun
+                        contrôle et n'assumons aucune responsabilité quant au contenu, aux
+                        politiques de confidentialité ou aux pratiques des sites ou services
+                        tiers.
+                    </p>
 
-                        <h3>8. Liens vers d'autres services</h3>
-                        <p>
-                            Notre service peut contenir des liens vers des applications de tiers
-                            qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers,
-                            vous serez redirigé vers l'application de ce tiers. Nous vous
-                            conseillons fortement de consulter la politique de confidentialité de
-                            chaque site ou application que vous visitez. Nous n'avons aucun
-                            contrôle et n'assumons aucune responsabilité quant au contenu, aux
-                            politiques de confidentialité ou aux pratiques des sites ou services
-                            tiers.
-                        </p>
+                    <h3>9. Modifications de cette politique de confidentialité</h3>
+                    <p>
+                        Nous pouvons mettre à jour notre politique de confidentialité de temps
+                        à autre. Nous vous informerons de tout changement en publiant la
+                        nouvelle politique de confidentialité sur cette page et en mettant à
+                        jour la "Date d'entrée en vigueur" en haut de cette politique. Nous
+                        pouvons également vous informer par e-mail ou via un avis visible sur
+                        notre Service avant que le changement ne devienne effectif. Il est
+                        conseillé de consulter cette politique de confidentialité
+                        périodiquement pour tout changement.
+                    </p>
 
-                        <h3>9. Modifications de cette politique de confidentialité</h3>
-                        <p>
-                            Nous pouvons mettre à jour notre politique de confidentialité de temps
-                            à autre. Nous vous informerons de tout changement en publiant la
-                            nouvelle politique de confidentialité sur cette page et en mettant à
-                            jour la "Date d'entrée en vigueur" en haut de cette politique. Nous
-                            pouvons également vous informer par e-mail ou via un avis visible sur
-                            notre Service avant que le changement ne devienne effectif. Il est
-                            conseillé de consulter cette politique de confidentialité
-                            périodiquement pour tout changement.
-                        </p>
-
-                        <h3>10. Nous contacter</h3>
-                        <p>
-                            Si vous avez des questions ou des préoccupations concernant cette
-                            politique de confidentialité, veuillez nous contacter à :
-                            <a href="mailto:application.ged@gmail.com">application.ged@gmail.com</a>.
-                        </p>
-                    </div>
-                </div>
+                    <h3>10. Nous contacter</h3>
+                    <p>
+                        Si vous avez des questions ou des préoccupations concernant cette
+                        politique de confidentialité, veuillez nous contacter à : <a href="mailto:application.ged@gmail.com">application.ged@gmail.com</a>.
+                    </p>
+                </CollapsibleDiv>
             </main>
-            <script src="legalNotice.js"></script>
         </>
     )
 }

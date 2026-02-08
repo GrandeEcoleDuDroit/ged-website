@@ -1,22 +1,23 @@
 import {type ReactNode, useState} from "react";
+import "./styles/CollapsibleDiv.css"
 
 type CollapsibleProps = {
     title: string;
-    content: ReactNode;
+    children: ReactNode;
 };
 
-const CollapsibleDiv = ({ title, content }: CollapsibleProps) => {
-    const [collapsed, setCollapsed] = useState<boolean>(false);
+const CollapsibleDiv = ({ title, children }: CollapsibleProps) => {
+    const [collapsed, setCollapsed] = useState(false);
 
     return (
         <div>
-            <div className="collapsible" onClick={() => setCollapsed(!collapsed)}>
+            <div className="collapsible-div" onClick={() => setCollapsed(!collapsed)}>
                 <h2>{title}</h2>
                 <span className="material-symbols-outlined">{collapsed ? "keyboard_arrow_down" : "keyboard_arrow_up"}</span>
             </div>
 
             <div className={`content ${collapsed ? "collapsed" : ""}`}>
-                {content}
+                {children}
             </div>
         </div>
     );

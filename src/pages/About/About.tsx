@@ -1,5 +1,6 @@
 import "./About.css"
 import {Helmet} from "react-helmet";
+import devMemoji from "../../assets/images/dev-memoji.png"
 
 const About = () => {
     return (
@@ -13,8 +14,8 @@ const About = () => {
 
                     <h3>Notre mission</h3>
                     <p>
-                        Nous avons pour projet de créer l'application “la Grande
-                        École du droit” afin de traiter un problème récurrent à
+                        Nous avons pour projet de créer l'application "la Grande
+                        École du Droit" afin de traiter un problème récurrent à
                         la GED, soit les difficultés de communication, en
                         centralisant toutes les annonces et missions afin de tout
                         trouver au même endroit. Le projet s'inscrit donc dans
@@ -51,8 +52,7 @@ const About = () => {
                                     <figcaption><strong>Présidente :</strong> Chloé Thai Van</figcaption>
                                     <figcaption><strong>Secrétaire générale :</strong> Chirine Moussa</figcaption>
                                     <figcaption><strong>Trésorier :</strong> Jean Darenne</figcaption>
-                                    <figcaption><strong>Responsable du pôle alumni :</strong> Pierre-Antoine Masson
-                                    </figcaption>
+                                    <figcaption><strong>Responsable du pôle alumni :</strong> Pierre-Antoine Masson</figcaption>
                                     <figcaption><strong>Responsable du pôle promotion :</strong> Agathe Dupuis</figcaption>
                                     <figcaption><strong>Responsable du pôle digital :</strong> Oumar T.</figcaption>
                                     <figcaption><strong>Responsable du pôle vie étudiante :</strong> Lea Martin</figcaption>
@@ -63,7 +63,7 @@ const About = () => {
                         <div className="devs">
                             <h4>Développeurs</h4>
                             <figure>
-                                <img src="../../assets/images/dev-memoji.png" alt="Mourchidi Mfoumby"
+                                <img src={devMemoji} alt="Mourchidi Mfoumby"
                                      id="dev-memoji-image"/>
                                 <figcaption>Mourchidi Mfoumby</figcaption>
                             </figure>

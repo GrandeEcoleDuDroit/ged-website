@@ -1,8 +1,4 @@
-a:hover {
-    text-decoration: underline;
-}
-
-.collapsible {
+.collapsible-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,9 +14,10 @@ a:hover {
     transition: max-height 0.2s ease-out;
 }
 
-.collapsed {
+.collapsible-div .collapsed {
     max-height: 0;
     padding: 0 18px;
+    transition: max-height 0.2s ease-out;
 }
 
 .material-symbols-outlined {
