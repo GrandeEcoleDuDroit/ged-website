@@ -1,12 +1,21 @@
+:root[data-theme="light"] {
+    --footer-bg: #333333;
+    --footer-text: #FFFFFF;
+}
+
+:root[data-theme="dark"] {
+    --footer-bg: #27292B;
+    --footer-text: #E8E6E3;
+}
+
 footer {
     text-align: center;
-    background-color: #333;
-    color: white;
+    background: var(--footer-bg);
+    color: var(--footer-text);
     padding-block: 30px;
     padding-inline: 20px;
     position: relative;
     bottom: 0;
-
 }
 
 footer a {

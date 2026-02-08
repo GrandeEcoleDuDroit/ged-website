@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound.tsx";
 import Footer from "./components/Footer.tsx";
 
 const App = () => {
-  return (
+    return (
       <>
           <Navbar/>
           <Routes>

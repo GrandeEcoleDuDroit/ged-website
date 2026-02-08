@@ -14,7 +14,7 @@
     transition: max-height 0.2s ease-out;
 }
 
-.collapsible-div .collapsed {
+.collapsed {
     max-height: 0;
     padding: 0 18px;
     transition: max-height 0.2s ease-out;
