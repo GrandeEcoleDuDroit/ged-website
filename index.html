@@ -1,49 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ged Website</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Ged Application</title>
-    <link href="./styles/home.css" rel="stylesheet"/>
-</head>
-
-<body>
-<header>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="./index.html">
-                <img alt="Logo GED" class="nav-logo-img" src="assets/logo/logo.png">
-            </a>
-
-            <button aria-label="Menu" class="nav-toggle">
-                <span class="material-symbols-outlined">dehaze</span>
-            </button>
-
-            <ul class="nav-links">
-                <li><a href="legal-notice.html">Mentions légales</a></li>
-                <li><a href="./about-us.html">À propos de nous</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-
-<main>
-    <div class="title-section">
-        <h2>Bienvenue !</h2>
-        <p id="subtitle">
-            Ce site relaye toutes les informations concernant les applications de
-            la Grande Ecole du Droit.
-        </p>
-    </div>
-</main>
-
-<footer>
-    <p>2025 La Grande Ecole Du Droit. Tous droits réservés.</p>
-    <p>Nous contacter : <a href="mailto:application.ged@gmail.com">application.ged@gmail.com</a></p>
-</footer>
-
-<script src="scripts/main.js"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
