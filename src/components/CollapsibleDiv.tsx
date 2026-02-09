@@ -6,18 +6,18 @@ type CollapsibleProps = {
     children: ReactNode;
 };
 
-const CollapsibleDiv = ({ title, children }: CollapsibleProps) => {
+const CollapsibleDiv = (props: CollapsibleProps) => {
     const [collapsed, setCollapsed] = useState(false);
 
     return (
         <div>
             <div className="collapsible-div" onClick={() => setCollapsed(!collapsed)}>
-                <h2>{title}</h2>
+                <h2>{props.title}</h2>
                 <span className="material-symbols-outlined">{collapsed ? "keyboard_arrow_down" : "keyboard_arrow_up"}</span>
             </div>
 
             <div className={`content ${collapsed ? "collapsed" : ""}`}>
-                {children}
+                {props.children}
             </div>
         </div>
     );

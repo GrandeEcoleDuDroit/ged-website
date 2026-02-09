@@ -1,5 +1,5 @@
-import {type ReactNode, useEffect, useState} from "react";
-import Theme from "../entities/Theme.ts";
+import {type ReactNode, useLayoutEffect, useState} from "react";
+import type {Theme} from "../entities/Theme.ts";
 import {ThemeContext} from "./ThemeContext.tsx";
 
 interface ThemeProviderProps {
@@ -7,34 +7,16 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
-    const [theme, setTheme] = useState<string>(() => {
-        return localStorage.getItem('theme') || Theme.LIGHT;
+    const [theme, setTheme] = useState<Theme>(() => {
+        return localStorage.getItem("theme") as Theme | undefined ?? "light";
     });
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         document.documentElement.setAttribute("data-theme", theme);
     }, [theme]);
 
-    useEffect(() => {
-        const handleThemeStorageEvent = (event: StorageEvent) => {
-            if (event.key === "theme") {
-                alert("Event theme")
-                const localTheme = event.newValue;
-                if (localTheme) {
-                    setTheme(localTheme);
-                }
-            }
-        }
-
-        window.addEventListener("storage", handleThemeStorageEvent);
-
-        return () => {
-            window.removeEventListener("storage", handleThemeStorageEvent);
-        };
-    }, []);
-
     const toggleTheme = () => {
-        const newTheme = theme == Theme.DARK ? Theme.LIGHT : Theme.DARK
+        const newTheme: Theme = theme == "dark" ? "light" : "dark"
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme);
     };
