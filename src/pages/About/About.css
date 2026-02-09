@@ -1,7 +1,3 @@
-@import url("global.css");
-@import url("header.css");
-@import url("footer.css");
-
 .team-section {
     display: flex;
     flex-direction: column;
