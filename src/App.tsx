@@ -6,16 +6,45 @@ import RoutePaths from "./entities/RoutePaths.ts";
 import Navbar from "./components/Navbar.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Footer from "./components/Footer.tsx";
+import {Helmet} from "react-helmet";
 
 const App = () => {
     return (
       <>
           <Navbar/>
           <Routes>
-              <Route path={RoutePaths.HOME} element={<Home/>}/>
-              <Route path={RoutePaths.LEGAL_NOTICE} element={<LegalNotice/>}/>
-              <Route path={RoutePaths.ABOUT} element={<About/>}/>
-              <Route path="*" element={<NotFound/>}/>
+              <Route path={RoutePaths.HOME} element={
+                  <>
+                      <Helmet>
+                          <title>Ged Applications</title>
+                      </Helmet>
+                      <Home/>
+                  </>
+              }/>
+              <Route path={RoutePaths.LEGAL_NOTICE} element={
+                  <>
+                      <Helmet>
+                          <title>Mentions légales</title>
+                      </Helmet>
+                    <LegalNotice/>
+                  </>
+              }/>
+              <Route path={RoutePaths.ABOUT} element={
+                  <>
+                      <Helmet>
+                          <title>À propos de nous</title>
+                      </Helmet>
+                      <About/>
+                  </>
+              }/>
+              <Route path="*" element={
+                  <>
+                      <Helmet>
+                          <title>Page non trouvé</title>
+                      </Helmet>
+                      <NotFound/>
+                  </>
+              }/>
           </Routes>
           <Footer/>
       </>

@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
+:root {
+    --white: #fff;
+    --black: #181A1B;
+    --primary: #697088;
+    --primary-hover: #5f6678;
+}
+
 :root[data-theme="light"] {
-    --bg: white;
+    --bg: var(--white);
     --text: #333;
     --link: #284871;
 }
 
 :root[data-theme="dark"] {
-    --bg: #181A1B;
+    --bg: var(--black);
     --text: #E8E6E3;
     --link: #96BADA;
 }
@@ -31,9 +38,9 @@ main {
 
 a {
     color: var(--link);
-    text-decoration: underline!important;
-    font-weight: normal!important;
-    cursor: pointer!important;
+    text-decoration: underline;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 li {

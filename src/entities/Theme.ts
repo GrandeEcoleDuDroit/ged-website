@@ -1,6 +1,1 @@
-const Theme = Object.freeze({
-    LIGHT: 'light',
-    DARK: 'dark',
-});
-
-export default Theme;
+export type Theme = "light" | "dark";

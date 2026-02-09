@@ -1,10 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import RoutePaths from "../entities/RoutePaths.ts";
 import "./styles/Navbar.css"
-import logo from "../assets/logo/logo.png"
+import logo from "../assets/logo/ged-logo.png"
 import {useState} from "react";
 import useTheme from "../hooks/useTheme.ts";
-import Theme from "../entities/Theme.ts";
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -36,7 +35,7 @@ const Navbar = () => {
 
                     <div className={`nav-right ${isActive ? "absolute" : ""}`}>
                         <button onClick={toggleTheme} className="nav-toggle-theme">
-                            <span className="material-symbols-outlined">{theme == Theme.DARK ? "light_mode" : "dark_mode"}</span>
+                            <span className="material-symbols-outlined">{theme == "dark" ? "light_mode" : "dark_mode"}</span>
                         </button>
 
                         <button aria-label="Menu" className="nav-toggle" onClick={toggleMenu}>

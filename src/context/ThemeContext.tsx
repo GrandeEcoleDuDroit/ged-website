@@ -1,7 +1,8 @@
 import {createContext} from "react";
+import type {Theme} from "../entities/Theme.ts";
 
 export interface ThemeContextType {
-    theme: string;
+    theme: Theme;
     toggleTheme: () => void;
 }
 
