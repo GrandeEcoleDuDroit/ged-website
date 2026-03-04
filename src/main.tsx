@@ -5,7 +5,7 @@ import App from './App.tsx'
 import ThemeProvider from "./context/ThemeProvider.tsx";
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter basename="/ged-website/">
+  <BrowserRouter basename="/itscloudy-website/">
       <ThemeProvider>
         <App />
       </ThemeProvider>
