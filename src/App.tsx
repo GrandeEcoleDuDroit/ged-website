@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home/Home.tsx";
-import About from "./pages/About/About.tsx";
 import LegalNotice from "./pages/LegalNotice/LegalNotice.tsx";
 import RoutePaths from "./entities/RoutePaths.ts";
 import Navbar from "./components/Navbar.tsx";
@@ -16,7 +15,7 @@ const App = () => {
               <Route path={RoutePaths.HOME} element={
                   <>
                       <Helmet>
-                          <title>Ged Applications</title>
+                          <title>ItsCloudy Applications</title>
                       </Helmet>
                       <Home/>
                   </>
@@ -27,14 +26,6 @@ const App = () => {
                           <title>Mentions légales</title>
                       </Helmet>
                     <LegalNotice/>
-                  </>
-              }/>
-              <Route path={RoutePaths.ABOUT} element={
-                  <>
-                      <Helmet>
-                          <title>À propos de nous</title>
-                      </Helmet>
-                      <About/>
                   </>
               }/>
               <Route path="*" element={

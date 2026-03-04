@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import RoutePaths from "../entities/RoutePaths.ts";
 import "./styles/Navbar.css"
-import logo from "../assets/logo/ged-logo.png"
+import logo from "../assets/logo/app-logo.png"
 import {useState} from "react";
 import useTheme from "../hooks/useTheme.ts";
 
@@ -29,7 +29,6 @@ const Navbar = () => {
 
                         <ul className={`nav-links ${isActive ? "active" : ""}`}>
                             <li><NavLink to={RoutePaths.LEGAL_NOTICE} onClick={closeMenu}>Mentions légales</NavLink></li>
-                            <li><NavLink to={RoutePaths.ABOUT} onClick={closeMenu}>À propos de nous</NavLink></li>
                         </ul>
                     </div>
 

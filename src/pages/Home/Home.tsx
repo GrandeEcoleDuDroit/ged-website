@@ -18,15 +18,14 @@ const Home = () => {
             <div className="title-section">
                 <h1>Bienvenue !</h1>
                 <p id="subtitle">
-                    Ce site relaye toutes les informations concernant les applications de
-                    la Grande Ecole du Droit.
+                    Ce site relaye toutes les informations concernant les applications ItsCloudy
                 </p>
             </div>
 
             <div className="app-section">
                 <RedirectAppCard appInfo={{
                     id: "android-app",
-                    title: "La Grande Ecole du Droit",
+                    title: "ItsCloudy",
                     version: androidVersion ?? "",
                     description: "Application mobile pour Android",
                     link: "https://play.google.com/store/apps/details?id=com.upsaclay.gedoise",
@@ -36,7 +35,7 @@ const Home = () => {
 
                 <RedirectAppCard appInfo={{
                     id: "ios-app",
-                    title: "La Grande Ecole du Droit",
+                    title: "ItsCloudy",
                     version: iosVersion ?? "",
                     description: "Application mobile pour iOS",
                     link: "https://apps.apple.com/fr/app/la-grande-ecole-du-droit/id6749663727",
@@ -49,7 +48,7 @@ const Home = () => {
 }
 
 async function getAppVersion(projetName: string): Promise<string | null> {
-    const url = `https://api.github.com/repos/GrandeEcoleDuDroit/${projetName}/releases/latest`;
+    const url = `https://api.github.com/repos/mourchidimfoumby/${projetName}/releases/latest`;
     const result = await fetch(url)
         .then(res => res.json())
         .then(data => data)

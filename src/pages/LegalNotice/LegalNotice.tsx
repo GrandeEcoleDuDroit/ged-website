@@ -7,8 +7,7 @@ const LegalNotice = () => {
                 <p>Dernière mise à jour : 2 Octobre 2025</p>
                 <p>
                     Les présentes Conditions d’Utilisation ont pour but d’encadrer l’accès et l’usage de
-                    l’application La
-                    Grande Ecole du Droit par les utilisateurs.
+                    l’application ItsCloudy par les utilisateurs.
                     L'application permet de publier des annonces ou missions, d’interagir via une messagerie, et de
                     créer un
                     profil personnel.
